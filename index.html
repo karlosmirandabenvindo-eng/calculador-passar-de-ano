@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculador: Dá pra Passar de Ano?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main id="card-principal" class="card">
+    <h1>Calculador de "Dá pra Passar de Ano?" 🎓</h1>
+    <p>Digite quanto você precisa tirar na última prova:</p>
+
+    <div class="input-container">
+      <input type="number" id="inputNota" min="0" max="10" step="0.5" placeholder="Ex: 7.5">
+      <button id="btnCalcular">Calcular Minha Sorte</button>
+    </div>
+
+    <!-- Área onde o evento do JS vai injetar o resultado -->
+    <div id="areaResultado" class="resultado-oculto">
+      <h2 id="textoResultado"></h2>
+      <img id="imagemResultado" src="" alt="Resultado em imagem" style="display: none;">
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

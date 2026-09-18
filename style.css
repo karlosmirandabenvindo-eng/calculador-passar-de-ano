@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c3e50;
+  transition: background-color 0.5s ease;
+  padding: 20px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+  transition: transform 0.3s ease, background-color 0.5s ease;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: center;
+  outline: none;
+}
+
+input:focus {
+  border-color: #3498db;
+}
+
+button {
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Área de Resultado */
+.resultado-oculto {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 2px dashed #eee;
+}
+
+#textoResultado {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+#imagemResultado {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Classes dinâmicas que o JS aplicará */
+.tema-facil {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.tema-medio {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.tema-dificil {
+  background-color: #f8d7da;
+  color: #721c24;
+}
